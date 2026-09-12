@@ -9,19 +9,40 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./dist/extension.cjs",
   "contributes": {
     "commands": [
       {
         "command": "thattachu.transliterate",
         "title": "Thattachu: Transliterate"
+      },
+      {
+        "command": "thattachu.toggleAutoTransliteration",
+        "title": "Thattachu: Toggle Automatic Transliteration"
       }
     ],
+    "configuration": {
+      "title": "Thattachu",
+      "properties": {
+        "thattachu.autoTransliterate": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically transliterate a completed Thanglish word when you type a space or punctuation mark."
+        }
+      }
+    },
     "keybindings": [
       {
         "key": "ctrl+shift+alt+t",
         "command": "thattachu.transliterate",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+alt+m",
+        "command": "thattachu.toggleAutoTransliteration",
         "when": "editorTextFocus"
       }
     ]
