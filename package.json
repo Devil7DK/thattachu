@@ -17,6 +17,13 @@
         "command": "thattachu.transliterate",
         "title": "Thattachu: Transliterate"
       }
+    ],
+    "keybindings": [
+      {
+        "key": "ctrl+shift+alt+t",
+        "command": "thattachu.transliterate",
+        "when": "editorTextFocus"
+      }
     ]
   },
   "scripts": {
