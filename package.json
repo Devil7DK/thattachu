@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "thattachu.helloWorld",
-        "title": "Hello World"
+        "command": "thattachu.transliterate",
+        "title": "Thattachu: Transliterate"
       }
     ]
   },
