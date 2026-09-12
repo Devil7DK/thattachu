@@ -2,6 +2,7 @@
   "name": "thattachu",
   "displayName": "Thattachu",
   "description": "Offline Thanglish to Tamil transliteration. Type Tamil text in any file without sending keystrokes to an external service - using ITRANS-style romanization.",
+  "publisher": "dineshkumar-t",
   "version": "0.0.1",
   "icon": "assets/logo.png",
   "engines": {
@@ -82,5 +83,17 @@
   "overrides": {
     "diff": "^8.0.4",
     "serialize-javascript": "^7.0.6"
-  }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Devil7DK/thattachu"
+  },
+  "keywords": [
+    "tamil",
+    "typing",
+    "thanglish",
+    "transliteration",
+    "ime"
+  ]
 }
